@@ -4,13 +4,13 @@
 
 > **【STM32寄存器入门教程】** 
 >
-> **@Keil+STM32CubeIDE双环境** 
+> **Keil+STM32CubeIDE双环境** 
 >
-> **@第一人称带入边学边讲 通俗易懂** 
+> **第一人称带入边学边讲 通俗易懂** 
 >
-> **@潜移默化的带入养成良好的代码编程风格的习惯** 
+> **潜移默化的带入养成良好的代码编程风格的习惯** 
 >
-> **@引导你如何学习 如何思考 解决问题** 
+> **引导你如何学习 如何思考 解决问题** 
 >
 > **我相信屏幕前的你 日后一定可以成为真正的强者、高手**
 >
@@ -20,12 +20,12 @@
 
 ```apl
     example_01_gpio_led();                //GPIO实验1   点亮LED 了解IO口配置及输出控制
-    example_02_gpio_key();     			  //GPIO实验2   检测KEY 了解IO口配置及输入检测
-    example_03_gpio_remap();   			  //GPIO实验3   重映射IO 了解IO口复用重映射
-    example_04_gpio_bitband(); 		      //GPIO实验4   位带操作IO 了解IO口位带操作
-    example_05_exti_key();      		  //EXTI实验    按键中断 了解外部中断
-    example_06_irq_priority();  		  //IRQ实验     配置中断优先级 了解中断优先级配置
-    example_07_delay();         		  //SYSTICK实验 实现精确延时函数 了解延时实现方式
+    example_02_gpio_key();                //GPIO实验2   检测KEY 了解IO口配置及输入检测
+    example_03_gpio_remap();              //GPIO实验3   重映射IO 了解IO口复用重映射
+    example_04_gpio_bitband();            //GPIO实验4   位带操作IO 了解IO口位带操作
+    example_05_exti_key();                //EXTI实验    按键中断 了解外部中断
+    example_06_irq_priority();            //IRQ实验     配置中断优先级 了解中断优先级配置
+    example_07_delay();                   //SYSTICK实验 实现精确延时函数 了解延时实现方式
     example_08_usart_polltx_isrrx();      //USART实验1  实现查询式发送中断式接收
     example_09_usart_printf();            //USART实验2  printf重定向到串口
     example_10_usart_ringbuffer();        //USART实验3  环形缓冲区+IDEL中断
@@ -71,5 +71,5 @@ stm32_reg_dev_example/
 │   ├── project_cubeide/   # cubeide工程
 │   ├── project_keil/      # keil工程
 │   ├── project_vscode/    # vscode eide工程
-└── reference/  	      # 文档目录
+└── reference/            # 文档目录
 ```
