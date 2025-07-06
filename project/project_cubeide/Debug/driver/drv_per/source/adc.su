@@ -1,0 +1,4 @@
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/adc.c:22:6:adc1_init	4	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/adc.c:94:10:adc1_start_read	4	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/adc.c:104:6:ADC1_2_IRQHandler	4	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/adc.c:121:6:adc1_dma_init	4	static

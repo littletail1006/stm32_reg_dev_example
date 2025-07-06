@@ -1,0 +1,19 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "*.s": "asm-collection",
+            "i2c_io.h": "c",
+            "tim.h": "c",
+            "stm32f103xe.h": "c",
+            "oled.h": "c",
+            "dma.h": "c",
+            "adc.h": "c"
+        }
+    },
+    "extensions": {}
+}

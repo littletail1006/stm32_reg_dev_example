@@ -1,0 +1,5 @@
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/common/include/core_cm3.h:1648:22:__NVIC_SetPriority	16	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/common/include/core_cm3.h:1695:26:NVIC_EncodePriority	40	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/dma.c:21:6:dma1_ch1_mem2mem_init	4	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/dma.c:51:6:dma1_ch4_mem2per_init	4	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/dma.c:80:6:dma1_ch5_per2mem_init	8	static

@@ -1,0 +1,4 @@
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/wdg.c:28:6:iwdg_init	1
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/wdg.c:50:6:iwdg_feed	1
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/wdg.c:67:6:wwdg_init	1
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/wdg.c:83:6:wwdg_feed	1

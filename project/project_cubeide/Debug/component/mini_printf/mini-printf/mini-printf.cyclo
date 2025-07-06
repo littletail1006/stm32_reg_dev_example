@@ -1,0 +1,6 @@
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/component/mini_printf/mini-printf/mini-printf.c:47:1:mini_strlen	2
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/component/mini_printf/mini-printf/mini-printf.c:55:1:mini_itoa	10
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/component/mini_printf/mini-printf/mini-printf.c:104:1:_putc	2
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/component/mini_printf/mini-printf/mini-printf.c:114:1:_puts	3
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/component/mini_printf/mini-printf/mini-printf.c:130:1:mini_vsnprintf	16
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/component/mini_printf/mini-printf/mini-printf.c:199:1:mini_snprintf	1

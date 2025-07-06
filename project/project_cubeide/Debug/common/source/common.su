@@ -1,0 +1,8 @@
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/common/include/core_cm3.h:1648:22:__NVIC_SetPriority	16	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/common/include/core_cm3.h:1695:26:NVIC_EncodePriority	40	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/common/source/common.c:48:1:__io_putchar	16	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/common/source/common.c:62:6:delay_us	16	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/common/source/common.c:101:6:delay_ms	16	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/common/source/common.c:136:7:delay_init	4	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/common/source/common.c:149:6:systick_init	16	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/common/source/common.c:160:6:systemclock_init	16	static

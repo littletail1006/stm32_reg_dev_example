@@ -1,0 +1,13 @@
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/i2c_io.c:24:13:I2C_Delay	16	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/i2c_io.c:30:6:i2c_start	8	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/i2c_io.c:41:6:i2c_stop	8	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/i2c_io.c:50:6:i2c_ack	8	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/i2c_io.c:60:6:i2c_nack	8	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/i2c_io.c:69:9:i2c_wait_ack	16	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/i2c_io.c:87:6:i2c_write_byte	24	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/i2c_io.c:109:9:i2c_read_byte	16	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/i2c_io.c:132:6:sw_i2c_init	4	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/i2c_io.c:148:6:sw_i2c_write_byte	16	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/i2c_io.c:172:9:sw_i2c_read_byte	24	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/i2c_io.c:204:6:sw_i2c_write	24	static
+G:/WorkSpace/workspace_STM32CubeIDE/stm32_project_template/driver/drv_per/source/i2c_io.c:231:6:sw_i2c_read	32	static

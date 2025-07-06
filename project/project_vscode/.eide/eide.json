@@ -1,0 +1,297 @@
+{
+  "name": "project",
+  "type": "ARM",
+  "dependenceList": [],
+  "srcDirs": [],
+  "virtualFolder": {
+    "name": "<virtual_root>",
+    "files": [],
+    "folders": [
+      {
+        "name": "app",
+        "files": [
+          {
+            "path": "../../app/main.c"
+          },
+          {
+            "path": "../../app/example.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "component",
+        "files": [
+          {
+            "path": "../../component/mini_printf/lwprintf/lwprintf.c"
+          },
+          {
+            "path": "../../component/mini_printf/mini-printf/mini-printf.c"
+          },
+          {
+            "path": "../../component/ring_buffer/lwrb/lwrb.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "common",
+        "files": [
+          {
+            "path": "../../common/source/common.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "driver_per",
+        "files": [
+          {
+            "path": "../../driver/drv_per/source/usart.c"
+          },
+          {
+            "path": "../../driver/drv_per/source/dma.c"
+          },
+          {
+            "path": "../../driver/drv_per/source/i2c_io.c"
+          },
+          {
+            "path": "../../driver/drv_per/source/i2c.c"
+          },
+          {
+            "path": "../../driver/drv_per/source/tim.c"
+          },
+          {
+            "path": "../../driver/drv_per/source/adc.c"
+          },
+          {
+            "path": "../../driver/drv_per/source/rtc.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "driver_dev",
+        "files": [
+          {
+            "path": "../../driver/drv_dev/source/led.c"
+          },
+          {
+            "path": "../../driver/drv_dev/source/key.c"
+          },
+          {
+            "path": "../../driver/drv_dev/source/oled.c"
+          }
+        ],
+        "folders": []
+      },
+      {
+        "name": "startup",
+        "files": [
+          {
+            "path": "../project_keil/startup/startup_stm32f10x_md.s"
+          }
+        ],
+        "folders": []
+      }
+    ]
+  },
+  "outDir": "build",
+  "deviceName": null,
+  "packDir": null,
+  "miscInfo": {
+    "uid": "77fcf210ed6a9164895eb5abfaef53fa"
+  },
+  "targets": {
+    "project_template": {
+      "excludeList": [
+        "<virtual_root>/component/lwprintf.c"
+      ],
+      "toolchain": "AC5",
+      "compileConfig": {
+        "cpuType": "Cortex-M3",
+        "floatingPointHardware": "none",
+        "scatterFilePath": "",
+        "useCustomScatterFile": false,
+        "storageLayout": {
+          "RAM": [
+            {
+              "tag": "RAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "RAM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x20000000",
+                "size": "0x5000"
+              },
+              "isChecked": true,
+              "noInit": false
+            },
+            {
+              "tag": "IRAM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "noInit": false
+            }
+          ],
+          "ROM": [
+            {
+              "tag": "ROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "ROM",
+              "id": 3,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            },
+            {
+              "tag": "IROM",
+              "id": 1,
+              "mem": {
+                "startAddr": "0x8000000",
+                "size": "0x10000"
+              },
+              "isChecked": true,
+              "isStartup": true
+            },
+            {
+              "tag": "IROM",
+              "id": 2,
+              "mem": {
+                "startAddr": "0x0",
+                "size": "0x0"
+              },
+              "isChecked": false,
+              "isStartup": false
+            }
+          ]
+        },
+        "options": "null"
+      },
+      "uploader": "JLink",
+      "uploadConfig": {
+        "bin": "",
+        "baseAddr": "",
+        "cpuInfo": {
+          "vendor": "ST",
+          "cpuName": "STM32F103C8"
+        },
+        "proType": 1,
+        "speed": 8000,
+        "otherCmds": ""
+      },
+      "uploadConfigMap": {
+        "JLink": {
+          "bin": "",
+          "baseAddr": "",
+          "cpuInfo": {
+            "vendor": "ST",
+            "cpuName": "STM32F103C8"
+          },
+          "proType": 1,
+          "speed": 8000,
+          "otherCmds": ""
+        },
+        "OpenOCD": {
+          "bin": "",
+          "target": "stm32f1x",
+          "interface": "stlink",
+          "baseAddr": "0x08000000"
+        }
+      },
+      "custom_dep": {
+        "name": "default",
+        "incList": [
+          "../../driver/drv_dev/include",
+          "../../common/include",
+          "../../driver/drv_per/include",
+          "../../component/mini_printf/mini-printf",
+          "../../component/ring_buffer/lwrb",
+          "../project_keil/RTE/_project_template"
+        ],
+        "libList": [],
+        "defineList": []
+      },
+      "builderOptions": {
+        "AC5": {
+          "version": 4,
+          "beforeBuildTasks": [],
+          "afterBuildTasks": [],
+          "global": {
+            "use-microLIB": true,
+            "output-debug-info": "enable"
+          },
+          "c/cpp-compiler": {
+            "optimization": "level-1",
+            "one-elf-section-per-function": true,
+            "c99-mode": true,
+            "C_FLAGS": "--diag_suppress=1 --diag_suppress=1295",
+            "CXX_FLAGS": "--diag_suppress=1 --diag_suppress=1295",
+            "warnings": "all-warnings"
+          },
+          "asm-compiler": {},
+          "linker": {
+            "output-format": "elf",
+            "xo-base": "",
+            "ro-base": "0x08000000",
+            "rw-base": "0x20000000"
+          }
+        }
+      }
+    }
+  },
+  "version": "3.5"
+}
