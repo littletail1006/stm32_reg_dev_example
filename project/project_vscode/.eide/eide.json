@@ -66,6 +66,12 @@
           },
           {
             "path": "../../driver/drv_per/source/rtc.c"
+          },
+          {
+            "path": "../../driver/drv_per/source/wdg.c"
+          },
+          {
+            "path": "../../driver/drv_per/source/pwr.c"
           }
         ],
         "folders": []

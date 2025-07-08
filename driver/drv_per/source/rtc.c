@@ -61,7 +61,7 @@ void rtc_init(void)
     }
     /* 开启中断 */
     RTC->CRH |= RTC_CRH_SECIE | RTC_CRH_ALRIE; // 秒和闹钟中断使能
-    NVIC_EnableIRQ(RTC_IRQn);    
+    NVIC_EnableIRQ(RTC_IRQn);
 }
 
 void rtc_time_set(uint32_t sec)
@@ -206,7 +206,7 @@ void rtc_int_callback_set(enum CB_TYPE type,void (*pfun_cb)(void))
    if(pfun_cb==NULL)
         return ;
    if(type==SEC_HANDLE)         sec_handle=pfun_cb; 
-   else if(type==ALARM_HANLDE)  alarm_handle=pfun_cb; 
+   else if(type==ALARM_HANDLE)  alarm_handle=pfun_cb; 
 }
 
 void RTC_IRQHandler(void) {
@@ -214,12 +214,31 @@ void RTC_IRQHandler(void) {
     if (RTC->CRL & RTC_CRL_SECF) {
         RTC->CRL &= ~(RTC_CRL_SECF); // 清除秒中断标志
         // 处理代码
-        sec_handle();
+        if(sec_handle!=NULL)
+            sec_handle();
     }
     /* 闹钟中断 */
     if (RTC->CRL & RTC_CRL_ALRF) {
         RTC->CRL &= ~(RTC_CRL_ALRF); // 清除秒中断标志
         // 处理代码
-        alarm_handle();
+        if(alarm_handle!=NULL)
+            alarm_handle();
+    }
+}
+
+void rtc_alarm_wakeup_cfg(void)
+{
+    /* 停止模式下 需要配置 待机模式下不用 */
+    EXTI->IMR |= EXTI_IMR_MR17;
+    EXTI->RTSR |= EXTI_RTSR_TR17;
+
+    NVIC_EnableIRQ(RTC_Alarm_IRQn);
+}
+
+void RTCAlarm_IRQHandler(void) {
+    if (RTC->CRL & RTC_CRL_ALRF) {
+        RTC->CRL &= ~RTC_CRL_ALRF;     // 清除标志
+        EXTI->PR |= EXTI_PR_PR17;      // 清除 EXTI
+       
     }
 }

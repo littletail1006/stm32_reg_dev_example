@@ -52,6 +52,22 @@ PUTCHAR_PROTOTYPE
     return ch;
 }
 
+#pragma import(__use_no_semihosting)
+
+struct __FILE {
+
+    int handle;
+
+};
+
+FILE __stdout;
+
+/* 定义_sys_exit()以避免使用半主机模式 */
+void _sys_exit(int x) {
+
+    x = x;
+
+}
 /**
  * [delay_us us延时]
  * @param us [微秒 范围0-59652 DWT下]

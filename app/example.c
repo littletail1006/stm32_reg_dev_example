@@ -23,6 +23,94 @@
 #include "adc.h"
 #include "wdg.h"
 #include "rtc.h"
+#include "pwr.h"
+
+#ifdef example_31_enable
+
+date_t date;
+    
+void sec_func()
+{
+   rtc_date_get(&date);
+   printf("Date Time:[%04d-%02d-%02d %02d:%02d:%02d]\n",date.year,date.month,date.day, \
+                                                 date.hour, date.minute, date.second);
+}
+void alarm_func()
+{
+   printf("[%04d-%02d-%02d %02d:%02d:%02d] ALARM\n",date.year,date.month,date.day, \
+                                                 date.hour, date.minute, date.second);
+}
+
+void example_31_pwr_standby(void)
+{
+    usart1_init();
+//    rtc_int_callback_set(SEC_HANDLE,sec_func);
+//    rtc_int_callback_set(ALARM_HANDLE,alarm_func);
+    rtc_init(); 
+    rtc_alarm_time_set(rtc_time_get()+5);
+
+    printf("system enter standby...\n");     
+    pwr_enter_standby_mode();                  
+    while(1)
+    {
+       /* 执行不到这里 */
+    }
+}
+
+#endif
+
+#ifdef example_30_enable
+
+void EXTI15_10_IRQHandler(void) {
+    if (EXTI->PR & (1 << 10)) {  // 判断是否 EXTI10 触发
+        EXTI->PR |= (1 << 10);   // 清除中断挂起标志
+        
+    }
+}
+
+void example_30_pwr_stop(void)
+{
+    usart1_init();
+    printf("system enter stop...\n");  
+    pwr_stop_wakeup_usart();
+    pwr_enter_stop_mode();
+    systemclock_init();                // 唤醒后需要重新初始化时钟及外设
+    usart1_init();                       
+    printf("system exit stop...\n");   // 唤醒后执行这里
+    while(1)
+    {
+       printf("usart1 working\n");
+       delay_ms(1000);
+    }
+}
+
+#endif
+
+
+#ifdef example_29_enable
+
+void USART1_IRQHandler(void) {
+    if (USART1->SR & USART_SR_RXNE) {
+        uint8_t byte = USART1->DR;
+        printf("USART IRQ...\n");   
+
+    }
+}
+void example_29_pwr_sleep(void)
+{
+    usart1_init();
+    printf("system enter sleep...\n");  
+    pwr_enter_sleep_mode();
+    printf("system exit sleep...\n");   // 唤醒后执行这里
+    while(1)
+    {
+       printf("usart1 working\n");
+       delay_ms(1000);
+    }
+
+}
+
+#endif
 
 #ifdef example_28_enable
 
@@ -66,7 +154,7 @@ void example_28_rtc(void)
     #endif
 #endif    
     rtc_int_callback_set(SEC_HANDLE,sec_func);
-    rtc_int_callback_set(ALARM_HANLDE,alarm_func);
+    rtc_int_callback_set(ALARM_HANDLE,alarm_func);
     while(1)
     {
 

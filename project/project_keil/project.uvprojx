@@ -520,6 +520,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\driver\drv_per\source\rtc.c</FilePath>
             </File>
+            <File>
+              <FileName>pwr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\driver\drv_per\source\pwr.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

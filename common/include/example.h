@@ -45,7 +45,10 @@ extern "C" {
 //#define example_25_enable
 //#define example_26_enable
 //#define example_27_enable
-#define example_28_enable
+//#define example_28_enable
+//#define example_29_enable
+//#define example_30_enable
+#define example_31_enable
 // [function declaration]———————————————————————————————————————————————————————
 extern void example_01_gpio_led(void);
 extern void example_02_gpio_key(void);
@@ -75,7 +78,10 @@ extern void example_25_adc_poll_03(void);
 extern void example_26_adc_int(void);
 extern void example_27_wdg(void);
 extern void example_28_rtc(void);
-
+extern void example_29_pwr_sleep(void);
+extern void example_30_pwr_stop(void);
+extern void example_31_pwr_standby(void);
+             
 #ifdef __cplusplus
 }
 #endif

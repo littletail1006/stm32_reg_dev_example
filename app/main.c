@@ -41,7 +41,10 @@ int main(void) {
 //    example_25_adc_poll_03();             //ADC实验3 注入通道(使用方式和规则一样)
 //    example_26_adc_int();                 //ADC实验4 中断式
 //    example_27_wdg();                     //WDG实验  独立和窗口看门狗
-    example_28_rtc();                     //RTC实验  日期 时间戳(秒计数)和闹钟
+//    example_28_rtc();                     //RTC实验  日期 时间戳(秒计数)和闹钟
+//    example_29_pwr_sleep();               //PWR实验1 睡眠模式
+//    example_30_pwr_stop();                //PWR实验2 停止模式
+    example_31_pwr_standby();             //PWR实验3 待机模式
     while (1) {
     }
 }
